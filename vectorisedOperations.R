@@ -22,4 +22,7 @@ z
 z <- x < y
 z
 
-
+#different sized vectors
+x <- c(50, 34, 111, 7, 24)
+z <- x + y
+z
