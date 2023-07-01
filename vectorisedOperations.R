@@ -18,3 +18,8 @@ z <- x * y
 z
 
 
+#comparison
+z <- x < y
+z
+
+
