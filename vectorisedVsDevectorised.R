@@ -5,5 +5,6 @@ a <- rnorm(N)
 b <- rnorm(N)
 
 #vectorised approach
+c <- a * b
 
-#devectorised approach
+#de-vectorised approach
