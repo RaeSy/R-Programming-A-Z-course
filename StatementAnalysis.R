@@ -23,11 +23,42 @@ marginPercent
 meanCalc <- 0
 for(i in length(profitPostTax)){
   meanCalc <- meanCalc + profitPostTax[i]
-  meanCalc
 }
 meanCalc
 
 #good months
+goodMonths <- profitPostTax > meanCalc
+
+#bad months
+badMonths <- profitPostTax < meanCalc
+
+#best month
+bestMonth <- 0
+bestMonthVal <- 0
+
+for (i in length(goodMonths)) {
+  if(goodMonths[i] = TRUE){
+    if(profitPostTax[i] > bestMonthVal){
+      bestMonthVal <- profitPostTax[i]
+      bestMonth <- i
+    }
+  }
+  
+}
+
+#worst month
+worstMonth <- 0
+worstMonthVal <- 0
+
+for (i in length(badMonths)) {
+  if(badMonths[i] = TRUE){
+    if(profitPostTax[i] > worstMonthVal){
+      worstMonthVal <- profitPostTax[i]
+      worstMonth <- i
+    }
+  }
+  
+}
 
 
 #requirements
